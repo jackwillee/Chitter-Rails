@@ -1,13 +1,25 @@
-<h1>Posts</h1>
+<div class="container">
+  <div class="page-header">
+    <h1> All Posts</h1> <%= link_to "New Post", new_post_path %>
+  </div>
+</div>
+<div class="container">
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Content</th>
+        <th>Time Created</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @posts.reverse.each do |post| %>
+        <tr>
+          <td><%= post.content %></td>
+          <td><%= post.created_at %></td>
+          <td> --- </td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
 
-
-<ul>
-  <% @posts.reverse.each do |post| %>
-    <li>
-      <%= post.content %>
-      <%= post.created_at %>
-    </li>
-  <% end %>
-</ul>
-
-<%= link_to "New Post", new_post_path %>
