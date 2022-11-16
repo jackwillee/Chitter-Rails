@@ -5,6 +5,7 @@
   <% @posts.reverse.each do |post| %>
     <li>
       <%= post.content %>
+      <%= post.created_at %>
     </li>
   <% end %>
 </ul>
