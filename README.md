@@ -1,24 +1,10 @@
-# README
+Welcome to Chitter- 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+To view 
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+enter git clone https://github.com/jackwillee/chitter-rails
+ after type  rake:db migrate 
+ and rails server or rails s 
+ to launch to server to localhost:3000
+ 
+ 
